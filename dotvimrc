@@ -65,6 +65,10 @@ set runtimepath+=~/.vim/my-snippets/
 filetype plugin indent on    " enables filetype detection
 let g:SimpylFold_docstring_preview = 1
 
+" enable syntastic error navigation (e.g., :lnext, :lprev)
+let g:syntastic_enable_signs = 1
+let g:syntastic_always_populate_loc_list = 1
+
 "autocomplete
 let g:ycm_autoclose_preview_window_after_completion=1
 
