@@ -12,3 +12,9 @@ How to resolve broken powerline font issue?
 
 Error message at vim startup: "YouCompleteme unavailable : no module named future" issue?
 - This means that the python-future submodule was not checked out. Go to YCM folder and run the following command: *git submodule update --init --recursive*
+
+How to generate YCM extra conf file?
+~~~~ 
+$ cd "project-home-dir"/
+$ ~/programs/YCM-Generator/config_gen.py -m make -c gcc -x c .
+~~~~
